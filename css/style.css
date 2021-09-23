@@ -45,10 +45,41 @@ body {
 .message-notifications {
 	height: 4.375rem;
 	background-color: #8EDAFC;
+	align-items: center;
+}
+.bell{
+	padding: .4375rem;
+}
+.bell .fa-bell-slash{
+	background-color: #fff;
+    color:#8EDAFC;
+    border-radius: 50%;
+    padding: .625rem;
+}
+.desk-message{
+	font-size: .625rem;
+    text-decoration: underline;
+	color: gray;
 }
 .search-contact {
-	height: 1.875rem;
+	height: 2.5rem;
+	padding: .625rem;
+    color: grey;
 }
+.search-contact button, .search-contact input{
+	border-color: #fff;
+	background-color: #fff;
+	color: grey;
+	border-width: 0;
+	padding: 0 .625rem;
+}
+.search-contact button{
+	width: 20%;
+}
+.search-contact input{
+	width: 70%;
+}
+
 .contacts {
 	height: calc(100% - 10.25rem);
 	overflow-y: scroll;
