@@ -82,7 +82,8 @@ const app = new Vue({
 					}
 				],
 			},
-		]
+		],
+		indexCurrentContact: 0
 	},
 	methods: {
 

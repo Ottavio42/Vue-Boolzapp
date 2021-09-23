@@ -5,6 +5,9 @@
 }
 
 /* Common */
+.flex{
+	display: flex;
+}
 body {
 	font-family: 'Lato', sans-serif;
 	height: 100vh;
@@ -24,11 +27,20 @@ body {
 }
 
 /* App Col Left */
+
 .app-col-left {
 	width: 30%;
 }
 .header-user {
-	height: 3.75rem;
+	height: 4rem;
+	align-items: center;
+	justify-content: space-between;
+}
+.icons i{
+	margin-right: .3125rem;
+}
+.personal-contact{
+	align-items: center;
 }
 .message-notifications {
 	height: 4.375rem;
@@ -38,7 +50,7 @@ body {
 	height: 1.875rem;
 }
 .contacts {
-	height: calc(100% - 10rem);
+	height: calc(100% - 10.25rem);
 	overflow-y: scroll;
 }
 
@@ -50,8 +62,8 @@ body {
 	background-color: #E9EBEB;
 }
 .contact-avatar {
-	width: 3.75rem;
-	height: 3.75rem;
+	width: 3.5rem;
+	height: 3.5rem;
 	border-radius: 50%;
 	overflow: hidden;
 }
@@ -69,7 +81,18 @@ body {
 	width: 70%;
 }
 .header-contact, .send-message {
-	height: 3.75rem;
+	height: 4rem;
+}
+.header-contact{
+	background-color: #EAEAEA;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 .625rem;
+}
+.current-contact {
+	display: flex;
+	align-items: center;
 }
 
 /* Message */
