@@ -89,7 +89,7 @@ const app = new Vue({
 	},
 	methods: {
 		searchContact(){
-			this.contact.forEach((contact) =>{
+			this.contacts.forEach((contact) =>{
 				let UpperName = contact.name.toUpperCase();
 				let LowerName = contact.name.toLowerCase();
 				if (UpperName.includes(this.searchContactText) || LowerName.includes(this.searchContactText)){
