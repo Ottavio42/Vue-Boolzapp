@@ -67,8 +67,14 @@
 						</div>
 						<div class="contact-name">
 							{{contacts[indexCurrentContact].name}}
+                            <div class="accesso">Ultimo accesso oggi alle 13:53</div>
 						</div>
 					</div>
+                    <div class="icons">
+                        <i class="fas fa-circle-notch"></i>
+                        <i class="fas fa-paperclip"></i>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
 				</div>
 				<div class="message-container">
 
@@ -80,10 +86,15 @@
 					</div>
 
 				</div>
-				<div class="send-message"></div>
+				<div class="send-message">
+                    <i class="far fa-smile"></i>
+                    <input v-model="newMessage" type="text" placeholder="Scrivi un messaggio" @keyup.enter="sendMessage()">
+                    <i class="fas fa-microphone"></i>
+                </div>
 			</div>
 		</div>
 
+		<script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 		<script src="js/script.js"></script>
 	</body>
