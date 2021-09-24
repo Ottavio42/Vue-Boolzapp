@@ -42,14 +42,15 @@
 				</div>
 				<div class="search-contact">
                     <button type="submit"><i class="fa fa-search"></i></button>
-					<input type="text" placeholder="Cerca o inizia una nuova chat">
+					<input v-model="searchContactText" @keyup="searchContact" type="text" placeholder="Cerca o inizia una nuova chat">
 				</div>
 
 				<ul class="contacts">
 					<li v-for="(contact, index) in contacts" 
 						:key="index" 
 						:class="index == indexCurrentContact ? 'active' : null" 
-						@click="indexCurrentContact = index">
+						@click="indexCurrentContact = index"
+						v-if ="contact.visible">
 						<div class="contact-avatar">
 							<img :src="`img/avatar${contact.avatar}.jpg`" :alt="contact.name">
 						</div>

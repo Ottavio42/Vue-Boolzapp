@@ -83,9 +83,23 @@ const app = new Vue({
 				],
 			},
 		],
-		indexCurrentContact: 0
+		indexCurrentContact: 0,
+		searchContactText: "",
+		newMessage: "",
 	},
 	methods: {
-
+		searchContact(){
+			this.contact.forEach((contact) =>{
+				let UpperName = contact.name.toUpperCase();
+				let LowerName = contact.name.toLowerCase();
+				if (UpperName.includes(this.searchContactText) || LowerName.includes(this.searchContactText)){
+					
+					contact.visible = true;
+				}
+				else {
+					contact.visible = false;   
+				}
+			});
+		},
 	}
 });
